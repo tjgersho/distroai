@@ -7,7 +7,7 @@ import browserify from "browserify";
 import source from "vinyl-source-stream";
 import del from "del";
 import mocha from "gulp-mocha"; 
-import babel from "gulp-babel";
+//import babel from "gulp-babel";
 import watch from "gulp-watch";
 import nodemon from "gulp-nodemon";
 
@@ -23,6 +23,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('build-js', () => {
+  
   return browserify("dev/js/app.js")
     .transform("babelify")
     .bundle()
