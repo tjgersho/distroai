@@ -4,6 +4,8 @@ import Preceptron from "./ailibs/Preceptron.js"
 import PreceptronInput from "./ailibs/PreceptInput.js"
 import Sigtron from "./ailibs/Sigtron.js"
 
+import NeuralNet from "./ailibs/NeuralNet.js"
+
 class Master {
 
   constructor() {
@@ -28,6 +30,8 @@ class Master {
 	var runner = new Runner();
 
 	runner.run();
+
+	var net = new NeuralNet([2,3,1]);
 
   }
 
