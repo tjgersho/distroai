@@ -5,8 +5,7 @@ import config from "./distroConfig.js"
 import fs from 'file-system'
 import path from 'path'
 
-import nj from 'numjs'
-import jd from 'jsdataframe'
+
 import {CostReduction, SGDOptimizer, InCPUMemoryShuffledInputProviderBuilder, Session, Graph, Array1D, NDArrayMathGPU, Scalar} from 'deeplearn';
 
 
